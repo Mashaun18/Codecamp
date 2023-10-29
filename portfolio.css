@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: wheat;
+}
+
+
+#navbar{
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+#navbar ul{
+    list-style: none;
+    text-align: center;
+}
+
+
+#navbar ul li{
+    display: inline;
+    margin: 0 20px;
+}
+
+
+#navbar a{
+    text-decoration: none;
+    color: snow;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+
+#navbar a:hover{
+    color: #007bff;
+}
+
+
+#welcome-section{
+    background: url(https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydGZvbGlvfGVufDB8fDB8fHww) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+
+.welcome-content{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.explore-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+.explore-button:hover{
+    background-color: green;
+}
+
+
+#projects{
+    background-color: goldenrod;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.project-tile{
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#contact{
+    text-align: center;
+    padding: 50px;
+}
+
+
+#contact-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+label{
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0,3s;
+}
+
+
+button:hover{
+    background-color: green;
+}
+
+
+@media(max-width: 768px){
+
+    #navbar ul li{
+        display: block;
+        margin: 10px 0;
+    }   
+}

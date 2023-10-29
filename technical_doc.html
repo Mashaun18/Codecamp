@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Documentation</title>
+    <link rel="stylesheet" href="./technical.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Transitions</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Transition_Properties">Transition Properties</a>
+        <a class="nav-link" href="#Timing_Functions">Timing Functions</a>
+        <a class="nav-link" href="#Timing_Delays">Timing Delays</a>
+        <a class="nav-link" href="#Transition_Transformation">Transition Transformation</a>
+        <a class="nav-link" href="#Transformation">Transformation</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+
+            <p>CSS transitions allow you to create smooth animations when properties of an element change.</p>
+            <p>They are used to provide visual feedback or enhance the user experience on a webpage.</p>
+            <p>Transition properties allow elements to change values over a specified duration, animating the property changes, rather than having them occur immediately.</p>
+            <p>So, if we have, say, a box with a red background that we want to change to a green background when it is hovered, we can reach right for the transition property to move between background colors:</p>
+
+        </section>
+
+        <section class="main-section" id="Transition_Properties">
+            <header>Transition Properties</header>
+
+            <p>You can specify a particular property as we have above, or use a value of all to refer to transition properties</p>
+            <p>You can transition various CSS properties, such as:</p>
+            <ul>
+                <li>Width: For smoothly resizing an element.</li>
+                <li>Height: For smooth changes in height.</li>
+                <li>Color: To transition text or background color changes.</li>
+                <li>Opacity: To create smooth fading effects.</li>
+                <li>Transform: For animations like scaling, rotating and translating.</li>
+            </ul>
+            <p>For example, to create a color transition, you can use:</p>
+            <code>transition: color 0.5s ease-in-out;</code>
+
+        </section>
+
+        <section class="main-section" id="Timing_Functions">
+            <header>Timing Functions</header>
+
+            <p>Timing functions control the speed of transitions. Common timing functions include:</p>
+            <ul>
+                <li>ease</li>
+                <li>ease-in</li>
+                <li>ease-out</li>
+                <li>ease-in-out</li>
+                <li>linear</li>
+            </ul>
+            <p>For example, to create a smooth in-out transition, you can use:</p>
+            <code>transition: width 1s ease-in-out;</code>
+
+        </section>
+
+        <section class="main-section" id="Timing_Delays">
+            <header>Timing Delays</header>
+
+            <p>For the most part, the order of the values does not matter — unless a delay is specified. If you specify a delay, you must first specify a duration.</p>
+            <p>For example, to create a transition with delay, you can use:</p>
+            <code>transition: transform 500ms 5s;</code>
+
+        </section>
+
+        <section class="main-section" id="Transition_Transformation">
+            <header>Transition Transformation</header>
+
+            <p>When used together, these properties allow you to create simple animations and add valuable interaction and visual feedback for your users.</p>
+            <p>So what are transforms and transitions? At their most basic level, transforms move or change the appearance of an element, while transitions make the element smoothly and gradually change from one state to another.</p>
+            <code>transition: transform 500ms 5s;</code>
+
+        </section>
+
+        <section class="main-section" id="Transformation">
+            <header>Transformation</header>
+
+            <p>CSS transforms-how to make an element change from one state to another. With the CSS transform property you can rotate, move, skew, and scale elements. </p>
+            <p>Transforms are triggered when an element changes states, such as on mouse-hover or mouse-click. The methods of transformation include:</p>
+            <ul>
+                <li>scale</li>
+                <li>rotate</li>
+                <li>translate</li>
+                <li>skew</li>
+                <li>transform-origin</li>
+            </ul>
+            <code>transform: scale(2);</code>
+
+        </section>
+
+
+    </main>
+    
+</body>
+</html>
