@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a id="profile-link" href="https://github.com/Mashaun18" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome-section">
+        <div class="welcome-content">
+            <h1>Welcome to My Portfolio</h1><br>
+            <p>I'm Animashaun Oreoluwa, Web Developer & Product Designer</p><br>
+            <a href="#projects" class="explore-button">Explore Projects</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-tile">
+            <h3>Dr Saraki's Tribute</h3><br>
+            <p>A Tribute to one of the political jaggernauts of Nigeria</p><br>
+            <a href="tribute_page.html">View Project</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Css Transition Documentation</h3><br>
+            <p>A documentation about CSS Transition and it's methods.</p><br>
+            <a href="technical_doc.html">View Project</a>
+        </div>
+
+        <div class="project-tile">
+            <h3>Moonlight Landing Page</h3><br>
+            <p>A Fashion House Landing Page showcasing elegance and the Afrikan style they deliver.</p><br>
+            <a href="landing_page.html">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
